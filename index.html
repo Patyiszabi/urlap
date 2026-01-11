@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Űrlap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Gyakorlat</p>
+      <h1>Űrlap feladatok</h1>
+    </header>
+
+    <section class="card">
+      <h2>3. Legördülő lista</h2>
+      <form id="select-form">
+        <label for="city-select">Válassz várost:</label>
+        <select id="city-select" name="city">
+          <option value="">-- Válassz --</option>
+          <option value="budapest">Budapest</option>
+          <option value="szeged">Szeged</option>
+          <option value="debrecen">Debrecen</option>
+          <option value="pecs">Pécs</option>
+        </select>
+      </form>
+      <p id="select-output" class="output">Kiválasztott érték: -</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Jelölőnégyzetek</h2>
+      <form id="checkbox-form">
+        <fieldset>
+          <legend>Válassz hobbit:</legend>
+          <label><input type="checkbox" name="hobby" value="sport" /> Sport</label>
+          <label><input type="checkbox" name="hobby" value="zene" /> Zene</label>
+          <label><input type="checkbox" name="hobby" value="olvasas" /> Olvasás</label>
+          <label><input type="checkbox" name="hobby" value="utazas" /> Utazás</label>
+        </fieldset>
+      </form>
+      <p id="checkbox-output" class="output">Kiválasztottak: -</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Többsoros szöveg ellenőrzése</h2>
+      <form id="textarea-form">
+        <label for="message">Üzenet (min. 20 karakter):</label>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Írj ide..."></textarea>
+        <button type="button" id="check-length">Ellenőrzés</button>
+      </form>
+      <p id="textarea-output" class="output">Írj be szöveget az ellenőrzéshez.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Rádiógombok</h2>
+      <form id="radio-form">
+        <fieldset>
+          <legend>Válassz színt:</legend>
+          <label><input type="radio" name="color" value="piros" /> Piros</label>
+          <label><input type="radio" name="color" value="kek" /> Kék</label>
+          <label><input type="radio" name="color" value="zold" /> Zöld</label>
+        </fieldset>
+      </form>
+      <p id="radio-output" class="output">Kiválasztott érték: -</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
